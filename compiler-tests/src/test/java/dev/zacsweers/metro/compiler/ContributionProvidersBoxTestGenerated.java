@@ -3408,6 +3408,12 @@ public class ContributionProvidersBoxTestGenerated extends AbstractContributionP
       public void testHiltNestedInstallIn() {
         run("HiltNestedInstallIn.kt");
       }
+
+      @Test
+      @TestMetadata("HiltUpstreamModuleHintsNotDuplicated.kt")
+      public void testHiltUpstreamModuleHintsNotDuplicated() {
+        run("HiltUpstreamModuleHintsNotDuplicated.kt");
+      }
     }
 
     @Nested

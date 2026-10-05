@@ -3408,6 +3408,12 @@ public class OmitRedundantMirrorsIrOnlyClassesBoxTestGenerated extends AbstractO
       public void testHiltNestedInstallIn() {
         run("HiltNestedInstallIn.kt");
       }
+
+      @Test
+      @TestMetadata("HiltUpstreamModuleHintsNotDuplicated.kt")
+      public void testHiltUpstreamModuleHintsNotDuplicated() {
+        run("HiltUpstreamModuleHintsNotDuplicated.kt");
+      }
     }
 
     @Nested

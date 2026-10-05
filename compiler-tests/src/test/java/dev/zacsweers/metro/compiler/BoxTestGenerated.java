@@ -3408,6 +3408,12 @@ public class BoxTestGenerated extends AbstractBoxTest {
       public void testHiltNestedInstallIn() {
         run("HiltNestedInstallIn.kt");
       }
+
+      @Test
+      @TestMetadata("HiltUpstreamModuleHintsNotDuplicated.kt")
+      public void testHiltUpstreamModuleHintsNotDuplicated() {
+        run("HiltUpstreamModuleHintsNotDuplicated.kt");
+      }
     }
 
     @Nested
